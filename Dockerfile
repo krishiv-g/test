@@ -14,7 +14,7 @@ COPY pyproject.toml poetry.lock ./
 
 # Install the project dependencies.
 # This uses the system python environment.
-RUN poetry install --no-dev --no-root
+RUN poetry install
 
 # Copy the rest of your application into the container.
 COPY . .
